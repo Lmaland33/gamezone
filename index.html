@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameZone — Your Gaming Hub</title>
+<style>
+:root{--bg:#0a0c16;--panel:#14182a;--text:#f4f6ff;--muted:#aab2ce;--cyan:#58e6ff;--purple:#9c7bff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(ellipse at top,#20204a 0,#0a0c16 55%);color:var(--text);min-height:100vh}
+header{padding:26px 6vw 18px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:1px solid #ffffff16}
+.logo{font-size:1.5rem;font-weight:900;letter-spacing:1px}.logo span{color:var(--cyan)}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;font-weight:700}nav a:hover{color:white}
+.hero{padding:58px 6vw 38px;max-width:1200px;margin:auto}.eyebrow{color:var(--cyan);font-size:.78rem;letter-spacing:3px;font-weight:800}.hero h1{font-size:clamp(2.5rem,6vw,5rem);line-height:.98;margin:14px 0}.hero h1 em{font-style:normal;color:var(--purple)}.hero p{max-width:640px;color:var(--muted);font-size:1.08rem;line-height:1.65}
+.section{padding:20px 6vw 44px;max-width:1400px;margin:auto}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}.section h2{margin:0;font-size:1.65rem}.section-head p{margin:6px 0 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:18px}.game-card{position:relative;overflow:hidden;min-height:255px;padding:22px;border:1px solid #ffffff16;border-radius:22px;background:linear-gradient(145deg,#1d2340,#111426);display:flex;flex-direction:column;justify-content:space-between;transition:transform .18s,border-color .18s}.game-card:hover{transform:translateY(-5px);border-color:#58e6ff80}.art{font-size:3.4rem;filter:drop-shadow(0 8px 18px #0008)}.tag{display:inline-block;padding:6px 9px;border-radius:99px;background:#ffffff12;color:#dce1ff;font-size:.72rem;font-weight:800;letter-spacing:.6px}.game-card h3{font-size:1.45rem;margin:12px 0 7px}.game-card p{color:var(--muted);line-height:1.45;margin:0 0 18px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;text-decoration:none;background:var(--cyan);color:#07121b;padding:12px 16px;border-radius:12px;font-weight:900;border:0;cursor:pointer}.btn:hover{filter:brightness(1.08)}.btn.secondary{background:#ffffff12;color:white;border:1px solid #ffffff20}.featured{background:linear-gradient(140deg,#3b2165,#17152f 70%)}.featured .btn{background:#d7c8ff}
+.arcade{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.mini{background:var(--panel);border:1px solid #ffffff16;border-radius:20px;padding:22px}.mini h3{margin:0 0 8px}.mini p{color:var(--muted);line-height:1.5}.counter{font-size:2rem;font-weight:900;color:var(--cyan);margin:14px 0}.dice-result{font-size:2.2rem;margin:12px 0}.note{font-size:.86rem;color:var(--muted);line-height:1.55;margin-top:12px}.footer{padding:26px 6vw 36px;text-align:center;color:var(--muted);border-top:1px solid #ffffff16;font-size:.86rem}
+@media(max-width:600px){header{padding:20px 5vw}.hero{padding:42px 5vw 24px}.section{padding:18px 5vw 32px}.game-card{min-height:225px}}
+</style>
+</head>
+<body>
+<header><div class="logo">GAME<span>ZONE</span> ⚡</div><nav><a href="#games">Games</a><a href="#arcade">Mini Arcade</a><a href="#about">About</a></nav></header>
+<main>
+<section class="hero"><div class="eyebrow">YOUR ALL-IN-ONE GAMING HUB</div><h1>Pick a game.<br><em>Jump right in.</em></h1><p>A clean home base for your favorite games, plus a mini arcade you can play right here. Save this page on your computer and use it whenever you want to play.</p><a class="btn" href="#games">EXPLORE GAMES ↓</a></section>
+<section class="section" id="games"><div class="section-head"><div><h2>Featured games</h2><p>Choose a game to open its official site or game page.</p></div></div>
+<div class="grid">
+<article class="game-card"><div><div class="art">⛏️</div><span class="tag">BUILD · EXPLORE</span><h3>Minecraft</h3><p>Build worlds, explore, and survive. Open the official Minecraft site to choose your version.</p></div><a class="btn" href="https://www.minecraft.net/" target="_blank" rel="noopener">Open Minecraft ↗</a></article>
+<article class="game-card"><div><div class="art">🪂</div><span class="tag">BATTLE ROYALE</span><h3>Fortnite</h3><p>Drop into the action, explore experiences, and check official game options.</p></div><a class="btn" href="https://www.fortnite.com/" target="_blank" rel="noopener">Open Fortnite ↗</a></article>
+<article class="game-card"><div><div class="art">🚗⚽</div><span class="tag">CARS · SOCCER</span><h3>Rocket League</h3><p>Drive, boost, and score goals. Visit the official Rocket League page.</p></div><a class="btn" href="https://www.rocketleague.com/" target="_blank" rel="noopener">Open Rocket League ↗</a></article>
+<article class="game-card featured"><div><div class="art">🎰 🎲</div><span class="tag">ARCADE · VIRTUAL TOKENS</span><h3>Neon Casino Arcade</h3><p>Try a pretend casino-themed mini arcade with free virtual points only—no money, purchases, or cash prizes.</p></div><a class="btn" href="#arcade">Play mini games ↓</a></article>
+</div></section>
+<section class="section" id="arcade"><div class="section-head"><div><h2>Neon mini arcade</h2><p>Just for fun: points are pretend and have no real-world value.</p></div></div>
+<div class="arcade">
+<div class="mini"><span class="tag">LUCKY NUMBER</span><h3>Number Draw</h3><p>Pick a number from 1 to 6, then draw a random number. Match it to earn arcade points.</p><label for="pick">Your number</label><br><select id="pick" style="margin-top:8px;padding:10px;border-radius:9px;background:#0a0c16;color:white;border:1px solid #ffffff30"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select><div class="dice-result" id="draw">🎲 ?</div><button class="btn" onclick="drawNumber()">Draw number</button><div class="note" id="drawMsg" aria-live="polite">Match your number to score 10 points.</div></div>
+<div class="mini"><span class="tag">QUICK REFLEX</span><h3>Tap Challenge</h3><p>Press the button as many times as you can in 10 seconds. Beat your own score!</p><div class="counter" id="tapCount">0 taps</div><button class="btn" id="tapBtn" onclick="tapGame()">Start 10-second round</button><div class="note" id="tapMsg" aria-live="polite">Ready when you are.</div></div>
+<div class="mini"><span class="tag">SCOREBOARD</span><h3>Your arcade points</h3><p>Earn points by matching a number. Points stay on this page only and are not money.</p><div class="counter" id="points">0 pts</div><button class="btn secondary" onclick="resetPoints()">Reset points</button><div class="note">No real-money betting, purchases, or prizes.</div></div>
+</div></section>
+<section class="section" id="about"><div class="mini"><h2>One page. Your games.</h2><p class="note">This is a fan-made game hub, not an official Minecraft, Fortnite, or Rocket League website. The large game buttons open their official websites; some games may need to be installed or signed in to play. The mini arcade runs directly in this page.</p></div></section>
+</main><footer class="footer">GAMEZONE ⚡ — Play fair, have fun, take breaks.</footer>
+<script>
+let points=0, taps=0, running=false, endAt=0, timer=null;
+function updatePoints(){document.getElementById('points').textContent=points+' pts'}
+function drawNumber(){const chosen=Number(document.getElementById('pick').value);const n=Math.floor(Math.random()*6)+1;document.getElementById('draw').textContent='🎲 '+n;const msg=document.getElementById('drawMsg');if(n===chosen){points+=10;updatePoints();msg.textContent='Match! +10 arcade points. Nice!'}else{msg.textContent='Not a match this time—try again for fun.'}}
+function tapGame(){if(running)return;running=true;taps=0;endAt=Date.now()+10000;const btn=document.getElementById('tapBtn');btn.textContent='TAP!';document.getElementById('tapMsg').textContent='Go! Keep tapping the button.';document.getElementById('tapCount').textContent='0 taps';timer=setInterval(()=>{if(Date.now()>=endAt){clearInterval(timer);running=false;btn.textContent='Play again';document.getElementById('tapMsg').textContent='Round over! You got '+taps+' taps.'}},100)}
+document.getElementById('tapBtn').addEventListener('click',()=>{if(running){taps++;document.getElementById('tapCount').textContent=taps+' taps'}});
+function resetPoints(){points=0;updatePoints()}
+</script>
+</body></html>
